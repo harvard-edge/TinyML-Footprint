@@ -1,6 +1,6 @@
 # TinyML-Footprint
 
-## TinyML Footprint Calculator *Coming Soon*
+## TinyML Footprint Calculator — *Coming Soon*
 Plug in play calculator for measuring footprint of complete TinyML system in progress and will be available soon (i.e. before camera-ready deadline)!
 
 ## Raw Data 
@@ -11,6 +11,8 @@ Below is the embodied fooprint in kg CO2-eq for each component of a TinyML Syste
 Pirson & Bol [[1]](#1) breakdown any IoT device into generic functional blocks: processing, memory, actuators, casing, connectiv-
 ity, PCB, power supply, security, sensing, transport, user interface, and others circuit components (e.g. resistors, capacitors, diodes, etc.). Within
 these blocks, there are different specifications that need to be met depending on the application and its requirements. Here we explain our selections for each TinyML System component from the specification levels provided in the image below from Pirson & Bol [[1]](#1). All three TinyML application footprints shown above (i.e. Keyword Spotting, Anomaly Detection, and Image Classification) contain the same system components *except* for the sensing modules as  sensing requirement is different for each application. Note that in our paper we have only included Keyword Spotting (best case) and Image Classification (typical case & worst case) to capture the range of TinyML System footprints while limiting text appropriately. 
+![Alt text](./HSLs_Pirson_Bol_2021.png?raw=true "Title")
+
 
 
 #### Processing
@@ -46,7 +48,7 @@ Pirson, T., & Bol, D. (2021). Assessing the embodied carbon footprint of IoT edg
 Dodge, J., Prewitt, T., Tachet des Combes, R., Odmark, E., Schwartz, R., Strubell, E., ... & Buchanan, W. (2022, June). Measuring the Carbon Intensity of AI in Cloud Instances. In 2022 ACM Conference on Fairness, Accountability, and Transparency (pp. 1877-1894).
 
 <a id="3">[3]</a> 
-https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references)
+https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references
 
 <a id="4">[4]</a> 
 https://www.apple.com/in/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf
