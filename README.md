@@ -13,31 +13,40 @@ ity, PCB, power supply, security, sensing, transport, user interface, and others
 these blocks, there are different specifications that need to be met depending on the application and its requirements. Here we explain our selections for each TinyML System component from the specification levels provided in the image below from Pirson & Bol [[1]](#1). All three TinyML application footprints shown above (i.e. Keyword Spotting, Anomaly Detection, and Image Classification) contain the same system components *except* for the sensing modules as  sensing requirement is different for each application. Note that in our paper we have only included Keyword Spotting (best case) and Image Classification (typical case & worst case) to capture the range of TinyML System footprints while limiting text appropriately. 
 ![Alt text](./HSLs_Pirson_Bol_2021.png?raw=true "Title")
 
+#### Actuators (HSL-0)
+No actuators are typically needed in the context of TinyML systems, especially not in the applications outlined earlier. Typically TinyML is used to perform on-device sensor analytics that can then relay some information to another system to take appropariate action. 
+
+#### Casing (HSL-1)
+Ideally TinyML should be able to be deployed in a "stick-and-peel" fashion, making the form factor and casing required very small. However, a 50-100g platic encasing as specified in HSL-1 is more than enough. For reference to see what 50-100g plastic cases look like see [here](https://www.alibaba.com/product-detail/15g-30g-50g-100g-Empty-Cosmetic_1600375933435.html?spm=a2700.7724857.0.0.1af332dfqd0A02).
+
+#### Connectivity (HSL-0)
 
 
-#### Processing
+#### Memory (HSL-0)
 
-#### Memory
 
-#### Actuators 
+#### Others (HSL-0)
+Other circuit components (e.g. resistors, capacitors, diodes, etc.)
 
-#### Casing
+#### PCB (HSL-0)
+Printed circuit board (PCB)
 
-#### Connectivity 
+#### Power Supply (HSL-1)
 
-#### Printed circuit board (PCB)
 
-#### Power supply
+#### Processing (HSL-0)
 
-#### Security
 
-#### Sensing
+#### Security (HSL-0)
 
-#### Transport
 
-#### User interface
+#### Sensing (HSL-1, HSL-2, HSL-3)
 
-#### Others circuit components (e.g. resistors, capacitors, diodes, etc.)
+
+#### Transport (HSL-1)
+
+
+#### User Interface (HSL-1)
 
 
 ## References
