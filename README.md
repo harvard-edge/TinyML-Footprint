@@ -17,7 +17,7 @@ these blocks, there are different specifications that need to be met depending o
 No actuators are typically needed in the context of TinyML systems, especially not in the applications outlined earlier. Typically TinyML is used to perform on-device sensor analytics that can then relay some information to another system to take appropariate action. 
 
 #### Casing (HSL-1)
-Ideally TinyML should be able to be deployed in a "stick-and-peel" fashion, making the form factor and casing required very small. However, a 50-100g platic encasing as specified in HSL-1 is more than enough. For reference to see what 50-100g plastic cases look like see [here](https://www.alibaba.com/product-detail/15g-30g-50g-100g-Empty-Cosmetic_1600375933435.html?spm=a2700.7724857.0.0.1af332dfqd0A02).
+Ideally TinyML should be able to be deployed in a "stick-and-peel" fashion, making the form factor and casing required very small. However, a 50-100g platic encasing as specified in HSL-1 is more than enough, and even in 10g in most cases ideally. For reference to see what 50-100g plastic cases look like see [here](https://www.alibaba.com/product-detail/15g-30g-50g-100g-Empty-Cosmetic_1600375933435.html?spm=a2700.7724857.0.0.1af332dfqd0A02).
 
 #### Connectivity (HSL-0)
 
