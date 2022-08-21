@@ -4,8 +4,39 @@
 Plug in play calculator for measuring footprint of complete TinyML system in progress and will be available soon (i.e. before camera-ready deadline)!
 
 ## Raw Data 
-Below is the embodied fooprint in kg CO2-eq for each component of a TinyML System using Pirson & Bol [[1]](#1). Model Training numbers taken from Dodge et al. [[2]](#2) using DenseNet models, which serve as an upper bound as these models are much larger, and require more energy to train, than typical TinyML models. To account for the Use-Stage of the hardware life cycle (i.e. operational footprint) included below, we calculated the kg CO2-eq of recharging the power supply  using emission factor for electricity consumed from EPA [[3]](#3), accounting for three years (to be consistent with Apple’s analysis [[4]](#4)) of continuous use at 1 mW, an average estimate of the power used by current TinyML systems in the MLPerf Tiny Benchmark [[5]](#5), [[6]](#6). End-of-life stage taken to be negliblige contribution (i.e. <1%) to system footprint as shown in multiple similar cases such as Apple Watch [[4]](#4) and STMicroelectronics Microcontroller [[7]](#7).
+Below is the embodied fooprint in kg CO2-eq for each component of a TinyML System for 3 different applications using Pirson & Bol [[1]](#1). Model Training numbers taken from Dodge et al. [[2]](#2) using DenseNet models, which serve as an upper bound as these models are much larger, and require more energy to train, than typical TinyML models. To account for the Use-Stage of the hardware life cycle (i.e. operational footprint) included below, we calculated the kg CO2-eq of recharging the power supply  using emission factor for electricity consumed from EPA [[3]](#3), accounting for three years (to be consistent with Apple’s analysis [[4]](#4)) of continuous use at 1 mW, an average estimate of the power used by current TinyML systems in the MLPerf Tiny Benchmark [[5]](#5), [[6]](#6). End-of-life stage taken to be negliblige contribution (i.e. <1%) to system footprint as shown in multiple similar cases such as Apple Watch [[4]](#4) and STMicroelectronics Microcontroller [[7]](#7).
 ![Alt text](./TinyMLSystems_Footprint_Data.png?raw=true "Title")
+
+## Hardware Specification Level Selection for TinyML Systems 
+Pirson & Bol [[1]](#1) breakdown any IoT device into generic functional blocks: processing, memory, actuators, casing, connectiv-
+ity, PCB, power supply, security, sensing, transport, user interface, and others circuit components (e.g. resistors, capacitors, diodes, etc.). Within
+these blocks, there are different specifications that need to be met depending on the application and its requirements. Here we explain our selections for each TinyML System component from the specification levels provided in the image below from Pirson & Bol [[1]](#1). All three TinyML application footprints shown above (i.e. Keyword Spotting, Anomaly Detection, and Image Classification) contain the same system components *except* for the sensing modules as  sensing requirement is different for each application. Note that in our paper we have only included Keyword Spotting (best case) and Image Classification (typical case & worst case) to capture the range of TinyML System footprints while limiting text appropriately. 
+
+
+#### Processing
+
+#### Memory
+
+#### Actuators 
+
+#### Casing
+
+#### Connectivity 
+
+#### Printed circuit board (PCB)
+
+#### Power supply
+
+#### Security
+
+#### Sensing
+
+#### Transport
+
+#### User interface
+
+#### Others circuit components (e.g. resistors, capacitors, diodes, etc.)
+
 
 ## References
 <a id="1">[1]</a> 
