@@ -23,7 +23,7 @@ Ideally TinyML should be able to be deployed in a "stick-and-peel" fashion, maki
 One of the main premises of TinyML is running the ML on device, rather than being reliant on the cloud. That being said some minimal communication will always be needed. However, typically we do not see an external IC for communication on TinyML systems and the communication embedded in the processor as mentioned in HSL-0 is what is used and is sufficient. 
 
 #### Memory (HSL-0)
-TinyML is performed on MCUs with only KBs of memory. This fits HSL-0 for this category; a separate, external chip for memory is not typical in TinyML. See Zhang et al. [[8]](#8) for examples of MCUs with only KBs of memory. HSL-0 should suffice for most TinyML applications. 
+TinyML is performed on MCUs with only KBs of memory. This fits HSL-0 for this category; a separate, external chip for memory is not typical in TinyML. See Zhang et al. [[8]](#8) for examples of MCUs with only KBs of memory running TinyML. HSL-0 should suffice for most TinyML applications. 
 
 #### Others (HSL-0)
 Other circuit components (e.g. resistors, capacitors, diodes, etc.) are not needed for running TinyML and HSL-0 is sufficient for this category. 
