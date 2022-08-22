@@ -4,7 +4,12 @@
 Plug in play calculator for measuring footprint of complete TinyML system in progress and will be available soon (i.e. before camera-ready deadline)!
 
 ## Raw Data 
-Below is the embodied fooprint in kg CO2-eq for each component of a TinyML System for 3 different applications using Pirson & Bol [[1]](#1). Model Training numbers taken from Dodge et al. [[2]](#2) using DenseNet models, which serve as an upper bound as these models are much larger, and require more energy to train, than typical TinyML models. To account for the Use-Stage of the hardware life cycle (i.e. operational footprint) included below, we calculated the kg CO2-eq of recharging the power supply  using emission factor for electricity consumed from EPA [[3]](#3), accounting for three years (to be consistent with Apple’s analysis [[4]](#4)) of continuous use at 1 mW, an average estimate of the power used by current TinyML systems in the MLPerf Tiny Benchmark [[5]](#5), [[6]](#6). End-of-life stage taken to be negliblige contribution (i.e. <1%) to system footprint as shown in multiple similar cases such as Apple Watch [[4]](#4) and STMicroelectronics Microcontroller [[7]](#7).
+Below is the embodied fooprint in kg CO2-eq for each component of a TinyML System for 3 different applications using Pirson & Bol [[1]](#1). 
+
+* **Model Training** numbers are taken from Dodge et al. [[2]](#2) using DenseNet models, which serve as an upper bound as these models are much larger, and require more energy to train, than typical TinyML models. 
+* **Use-Stage** of the hardware life cycle (i.e. operational footprint) is calculated as the kg CO2-eq of recharging the power supply  using emission factor for electricity consumed from EPA [[3]](#3), accounting for three years (to be consistent with Apple’s analysis [[4]](#4)) of continuous use at 1 mW, an average estimate of the power used by current TinyML systems in the MLPerf Tiny Benchmark [[5]](#5), [[6]](#6). 
+* **End-of-life** stage taken to be negliblige contribution (i.e. <1%) to system footprint as shown in multiple similar cases such as Apple Watch [[4]](#4) and STMicroelectronics Microcontroller [[7]](#7).
+
 ![Alt text](./TinyMLSystems_Footprint_Data.png?raw=true "Title")
 
 ## Hardware Specification Level Selection for TinyML Systems 
@@ -29,7 +34,7 @@ TinyML is performed on MCUs with only KBs of memory. This fits HSL-0 for this ca
 Other circuit components (e.g. resistors, capacitors, diodes, etc.) are not needed for running TinyML and HSL-0 is sufficient for this category. 
 
 #### PCB (HSL-0)
-The Arduino Nano 33 BLE Sense is built specifically with the intent of running TinyML [[9]](#9). The printed circuit board (PCB) can be found to be 8.1 square centimeters, showing HSL-0 for this component is sufficient. 
+The Arduino Nano 33 BLE Sense is built specifically with the intent of running TinyML [[9]](#9)[[10]](#10). The printed circuit board (PCB) can be found to be 8.1 square centimeters, showing HSL-0 for this component is sufficient. 
 
 #### Power Supply (HSL-2)
 A typical lithium ion battery for the power assumed to run TinyML (i.e. 1mW) on device will allow the systems to run for years with recharge required at a practical interval, compared to say a coin cell battery. The calculations performed to conclude this assumed a battery with 3.6V nominal voltage running at 2000 milliamp hours which we found to be reasonable and typical for a lithium-ion battery. 
@@ -64,7 +69,7 @@ https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculation
 https://www.apple.com/in/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf
 
 <a id="5">[5]</a> 
-C. Banbury, et al., “Mlperf tiny benchmark,” in Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks, J. Vanschoren and S. Yeung, Eds., 2021.
+Banbury, C., Reddi, V. J., Torelli, P., Holleman, J., Jeffries, N., Kiraly, C., ... & Xuesong, X. (2021). Mlperf tiny benchmark. arXiv preprint arXiv:2106.07597.
 
 <a id="6">[6]</a> 
 https://mlcommons.org/en/inference-tiny-07/
@@ -77,3 +82,6 @@ Zhang, Y., Suda, N., Lai, L., & Chandra, V. (2017). Hello edge: Keyword spotting
 
 <a id="9">[9]</a> 
 https://store-usa.arduino.cc/products/arduino-nano-33-ble-sense
+
+<a id="10">[10]</a> 
+https://store-usa.arduino.cc/products/arduino-tiny-machine-learning-kit
