@@ -69,7 +69,7 @@ https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculation
 https://www.apple.com/in/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf
 
 <a id="5">[5]</a> 
-Banbury, C., Reddi, V. J., Torelli, P., Holleman, J., Jeffries, N., Kiraly, C., ... & Xuesong, X. (2021). Mlperf tiny benchmark. arXiv preprint arXiv:2106.07597.
+Banbury, C., Reddi, V. J., Torelli, P., Holleman, J., Jeffries, N., Kiraly, C., ... & Xuesong, X. (2021). Mlperf tiny benchmark. In 2021 Proceedings of the Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks.
 
 <a id="6">[6]</a> 
 https://mlcommons.org/en/inference-tiny-07/
