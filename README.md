@@ -15,7 +15,10 @@ Below is the embodied fooprint in kg CO2-eq for each component of a TinyML Syste
 ## Hardware Specification Level Selection for TinyML Systems 
 Pirson & Bol [[1]](#1) breakdown any IoT device into generic functional blocks: processing, memory, actuators, casing, connectiv-
 ity, PCB, power supply, security, sensing, transport, user interface, and others circuit components (e.g. resistors, capacitors, diodes, etc.). Within
-these blocks, there are different specifications that need to be met depending on the application and its requirements. To show our footprints are reasonable, here we explain our selections for each TinyML System component from the specification levels provided in the image below from Pirson & Bol [[1]](#1). All three TinyML application footprints shown above (i.e. Keyword Spotting, Anomaly Detection, and Image Classification) contain the same system components *except* for the sensing modules as  sensing requirement is different for each application. Note that in our paper we have only included Keyword Spotting (best case) and Image Classification (typical case & worst case) to capture the range of TinyML System footprints while limiting text appropriately. 
+these blocks, there are different specifications that need to be met depending on the application and its requirements, which we use. 
+
+To show our TinyML System footprints are reasonable, here we explain our selections for each TinyML System component from the specification levels provided in the image below from Pirson & Bol [[1]](#1). All three TinyML application footprints shown above (i.e. Keyword Spotting, Anomaly Detection, and Image Classification) contain the same system components *except* for the sensing modules as  sensing requirement is different for each application. Note that in our paper we have only included Keyword Spotting (best case) and Image Classification (typical case & worst case) to capture the range of TinyML System footprints while limiting text appropriately. 
+
 ![Alt text](./HSLs_Pirson_Bol_2021.png?raw=true "Title")
 
 #### Actuators (HSL-0)
