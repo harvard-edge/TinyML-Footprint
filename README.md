@@ -4,7 +4,7 @@
 Plug in play calculator for measuring footprint of complete TinyML system in progress and will be available soon (i.e. before camera-ready deadline)!
 
 ## Raw Data 
-Below is the embodied fooprint in kg CO2-eq for each component of a TinyML System for 3 different applications using Pirson & Bol [[1]](#1). 
+Below is the embodied & operational fooprint in kg CO2-eq for each component of a TinyML System for 3 different applications using Pirson & Bol [[1]](#1). 
 
 * **Model Training** numbers are taken from Dodge et al. [[2]](#2) using DenseNet models, which serve as an upper bound as these models are much larger, and require more energy to train, than typical TinyML models. 
 * **Use-Stage** of the hardware life cycle (i.e. operational footprint) is calculated as the kg CO2-eq of recharging the power supply  using emission factor for electricity consumed from EPA [[3]](#3), accounting for three years (to be consistent with Apple’s analysis [[4]](#4)) of continuous use at 1 mW, an average estimate of the power used by current TinyML systems in the MLPerf Tiny Benchmark [[5]](#5), [[6]](#6). 
