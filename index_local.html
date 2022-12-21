@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>CO2 Footprint Calculator</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+
+    <link rel="stylesheet" href="assets/pyscript.css" />
+    <script defer src="assets/pyscript.min.js"></script>
+
+    <script src='assets/plotly-latest.min.js'></script>
+
+    <link href="assets/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="assets/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/material.indigo-pink.min.css">
+    <script defer src="assets/material.min.js"></script>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+
+  <body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout mdl-layout__header-row">
+          <h5>TinyML CO<sub>2</sub> Footprint Calculator</h5>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div id="app"></div>
+      </main>
+    </div>
+
+    <script type='text/javascript'>
+      function plotly_render(graph, div_id) {
+        var figure = JSON.parse(graph);
+        Plotly.newPlot(div_id, figure, {});
+      }
+    </script>
+
+    <!-- local dev -->
+    <py-config type="toml">
+      packages = ["numpy", "pandas", "plotly", "pyyaml"]
+      paths = [ "./elements.py" ]
+    </py-config>
+    <py-script src="./main.py">
+    </py-script>
+  </body>
+</html>
