@@ -1,7 +1,20 @@
 # TinyML-Footprint
 
-## TinyML Footprint Calculator — *Coming Soon*
-Plug in play calculator for measuring footprint of complete TinyML system in progress and will be available soon (i.e. before camera-ready deadline)!
+## TinyML Footprint Calculator 
+
+Plug in play calculator for measuring footprint of complete TinyML system available [here](https://harvard-edge.github.io/TinyML-Footprint)!
+
+Below is a walkthrough of how to use it:
+
+![Alt text](./TinyML_CO2_Footprint_Calculator.png?raw=true "Title")
+
+(A) **Select a TinyML application** as your baseline starting point, which sets your system to preset defaults.
+
+(B) **Customize components** based on your specific application needs and requirements. You can select one of the hardware specification levels we provide from Pirson & Bol [[1]](#1) or provide a custom value if you know the component's footprint for your own system.
+
+(C) **Add additional components** to include in your system and their associated footprints if you have more components the ones we provide. 
+
+(D) **Visualize the results** in the plot and measure your TinyML system's footprint! You can compare with an Apple Watch S7 and Macbook Pro for reference. 
 
 ## Raw Data 
 Below is the embodied & operational fooprint in kg CO2-eq for each component of a TinyML System for 3 different applications using Pirson & Bol [[1]](#1). 
