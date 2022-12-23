@@ -6,7 +6,7 @@ Plug in play calculator for measuring footprint of complete TinyML system availa
 
 Below is a walkthrough of how to use it:
 
-![Alt text](./TinyML_CO2_Footprint_Calculator.png?raw=true "Title")
+![Alt text](./TinyML_Footprint_Calculator.png?raw=true "Title")
 
 (A) **Select a TinyML application** as your baseline starting point, which sets your system to preset defaults.
 
